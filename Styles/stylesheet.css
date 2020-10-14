@@ -1,3 +1,77 @@
 P {
     color: blue;
 }
+
+.header_color {
+
+    color: red;
+
+}
+
+#header1 {
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+
+
+    background-color: beige;
+
+    text-align: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.current_page {
+
+    background-color: steelblue;
+
+    padding: 20px 15px;
+
+}
+
+.nav_menu {
+
+text-align: center;
+
+background-color: lightskyblue;
+
+margin: -9px;
+
+padding: 20px;
+
+}
+
+.home {
+
+    padding: 20px 15px;
+
+}
+
+.school {
+
+    padding: 20px 15px;
+
+}
+
+.courses {
+
+    padding: 20px 15px;
+
+}
+
+.footer {
+
+    position: relative;
+    margin-top: 700px;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    color: lightsteelblue;
+    font-size: 10px;
+
+}
+

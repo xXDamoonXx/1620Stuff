@@ -1,0 +1,41 @@
+ .heading-color {
+
+    background-color: beige;
+    color: red;
+
+}
+
+.heading-background {
+
+    background-color: beige;
+
+}
+
+h2.heading-background {
+
+    background-color:  beige
+
+} 
+
+#h2-background {
+
+    background-color: pink;
+
+}
+
+#span-text {
+
+    padding: 0px 5px;
+    border-top: 2px solid black;
+    border-bottom: 4px solid grey;
+
+}
+
+.span-paragraph {
+
+    border-style: ridge;
+    border-color: lightgreen;
+    border-width: 10px;
+    margin: 5px
+
+}
