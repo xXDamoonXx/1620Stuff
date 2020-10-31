@@ -1,0 +1,61 @@
+body {
+
+display: grid;
+grid-template-columns: 1fr 5fr;
+}
+
+header {
+
+background-color: #1E000E;
+margin-bottom: 5px;
+padding: 0px;
+order: 1;
+grid-column: 1/-1;
+text-align: center;
+color: white;
+}
+
+aside {
+
+background-color: #CBFF4D;
+margin-right: 5px;
+margin-top: 5px;
+margin-bottom: 5px;
+padding: 0px;
+grid-column: 1/2;
+order: 2;
+}
+
+main {
+
+background-color: #DDFDFE;
+margin-left: 5px;
+margin-top: 5px;
+margin-bottom: 5px;
+padding: 0px;
+grid-column: 2/4;
+order: 3;
+}
+
+footer {
+
+background-color: #463239;
+margin-top: 5px;
+padding: 0px;
+grid-column: 1/-1;
+order: 5;
+text-align: center;
+}
+
+footer ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+
+    padding: 10px;
+
+}
