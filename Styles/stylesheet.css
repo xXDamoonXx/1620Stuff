@@ -1,16 +1,7 @@
-P {
-    color: blue;
-}
-
-.header_color {
-
-    color: red;
-
-}
-
 #header1 {
 
     font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
 
 }
 
@@ -18,32 +9,46 @@ body {
 
 
     background-color: beige;
-
-    text-align: center;
-    
     font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+aside {
+
+    grid-column: 1/2;
+    order: 1;
+    padding-right: 60px;
+}
+
+main {
+
+    grid-column: 2/3;
+    order: 2;
+    padding-top: 50px;
+}
+
+
+/* __NAV BAR__ */
+.nav_menu {
+
+text-align: center;
+background-color: lightskyblue;
+margin: -9px;
+padding: 10px;
+grid-column: 1/-1;
 
 }
 
 .current_page {
 
     background-color: steelblue;
-
-    padding: 20px 15px;
-
-}
-
-.nav_menu {
-
-text-align: center;
-
-background-color: lightskyblue;
-
-margin: -9px;
-
-padding: 20px;
+    padding: 10px 15px;
 
 }
+
+
 
 .home {
 
@@ -51,11 +56,11 @@ padding: 20px;
 
 }
 
-.school {
+/* .school {
 
     padding: 20px 15px;
 
-}
+} */
 
 .courses {
 
@@ -66,12 +71,77 @@ padding: 20px;
 .footer {
 
     position: relative;
-    margin-top: 700px;
+    margin-top: 100px;
     bottom: 0px;
     text-align: center;
     width: 100%;
     color: lightsteelblue;
     font-size: 10px;
+    order: 3;
+    grid-column: 1/-1;
 
 }
+
+/*Home Page
+______________________________*/
+.phome1 {
+
+    padding-left: 55px;
+}
+
+.phome2 {
+
+    padding-left: 20px;
+}
+
+/*Courses Page
+______________________________*/
+ul {
+
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.item1 {
+
+    border-bottom: 1px solid grey;
+   padding-bottom: 10px;
+   padding-top: 10px;
+}
+
+.item2 {
+
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.item3 {
+
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.pinline {
+
+    display: inline;
+}
+
+.p1 {
+
+    padding-left: 85px;
+}
+
+.p2 {
+
+    padding-left: 210px;
+}
+
+.p3 {
+
+    padding-left: 43px;
+}
+
 

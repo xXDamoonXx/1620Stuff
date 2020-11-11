@@ -1,0 +1,29 @@
+body {
+
+    background-color: beige;
+}
+
+nav {
+
+    border: 3px solid burlywood;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+@media screen and (min-width:600px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 200px 4fr;
+    }
+
+    nav {
+
+        display: grid;
+        margin-right: 20px;
+    }
+
+}
