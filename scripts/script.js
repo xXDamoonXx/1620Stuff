@@ -99,19 +99,36 @@ var newList = []
 for (var i = 0; i < courseList.length; i++) {
 
     var courseNumList = courseList[i].code.substring(5, 9)
-    console.log(courseNumList)
+    // console.log(courseNumList)
     newList.push(courseNumList)
 }
 
 
-for (var i = 0; i < newList.length; i++){
+for (var i = 0; i < courseNumList.length; i++){
 
     // console.log(newList[i])
 
-    if (number == newList[0]) {
+    if (number == newList[0] || number == newList[1] || number == newList[2]) {
         // console.log('hello')
-        console.log(number)
-        console.log(`Yes, i take the course: ${courseNumList[i]} - ${courseList[i].name}`)
+        // console.log(number)
+        console.log(`Yes, i take the course: ${newList[i]} - ${courseList[i].name}`)
     }
 }
+    if (number !== newList[0] || number !== newList[1] || number !== newList[2]) {
 
+        let obj = {code:'ACIT' + ' ' + number, name:null};
+        courseList.push(obj)
+        console.log(courseList)
+    }
+
+
+function createCourseArray() {
+
+
+}
+
+
+function findCourse(courseList) {
+
+    
+}
