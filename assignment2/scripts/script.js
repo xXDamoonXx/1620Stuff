@@ -54,18 +54,25 @@ function cancelPage() {
     let textBoxArea = document.getElementById("textbox");
     let cancelbtn = document.getElementById("cancelbtn");
 
-    saveButton.style.display = 'none'
-    textBoxArea.style.display = 'none'
-    cancelbtn.style.display = 'none'
+    saveButton.style.visibility = 'hidden'
+    textBoxArea.style.visibility = 'hidden'
+    cancelbtn.style.visibility = 'hidden'
 }
 cancelButton.addEventListener("click", cancelPage)
 
 //Bring back note taking area
-let newNoteButton = document.querySelector("new_note-btn");
-function returnNote() {
+let noteButton = document.querySelector(".new_note_btn");
+function makeVisible() {
 
+    let returnsaveButton = document.getElementById("savebtn");
+    let returntextBoxArea = document.getElementById("textbox");
+    let returncancelbtn = document.getElementById("cancelbtn");
 
+    returnsaveButton.style.visibility = 'visible'
+    returntextBoxArea.style.visibility = 'visible'
+    returncancelbtn.style.visibility = 'visible'
 }
+noteButton.addEventListener("click", makeVisible)
 
 
 //attempt at making the aide list
