@@ -68,12 +68,13 @@ function makeArray () {
 }
 
 let saveButton = document.querySelector("save_btn");
+let sideList = document.querySelector("#newList");
 
+function saveText(notes) {
 
- // let savebutton = document.querySelector(".save_btn");
-// function saveText () {
-
-//     var addtext = document.getElementById("textbox").value;
-//     notesArray.push('savetext');
-// }
-// savebutton.addEventListener("click, savetext")
+    let ul = document.querySelector(`${notes.title}`)
+    let li = document.createElement("li")
+    li.innerHTML = `${notesArray.title} ${notesArray.body}`;
+    URL.appendChild(li);
+}
+saveButton.addEventListener("click", )
