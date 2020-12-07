@@ -5,33 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Home</title>
-    <link rel="stylesheet" href="Styles/stylesheet.css">
+    <link rel="stylesheet" href="styles/stylesheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+</head>
 
 
 <body>
-    <header>
+    <header id="header">
         <h1>Take Better Notes</h1>
     </header>
-    <main>
+    <main id="main">
         <section>
-            <button class="new_note_btn button">New Note</button>
-            <button class="dark_btn button">Dark Theme</button>
-            <textarea class="text_box" placeholder="This is a placeholder"></textarea>
-            <button class="save_btn button">Save</button>
-            <button class="cancel_btn button">Cancel</button>
+            <button id="newbtn" class="new_note_btn button">New Note</button>
+            <button id="darkbtn" class="dark_btn button">Dark Theme</button>
+            <textarea id = "textbox" class="text_box" placeholder="This is a placeholder"></textarea>
+            <button id="savebtn" class="save_btn button">Save</button>
+            <button id="cancelbtn" class="cancel_btn button">Cancel</button>
         </section>
     </main>
-    <nav>
+    <nav id="nav">
         <h2>My Notes</h2>
         <ul>
             <li class='notes'>note one</li>
             <li class='notes'>note two</li>
         </ul>
+        <ul title='notesArray'></ul>
     </nav>
-    <footer>
+    <footer id="footer">
         <h2>Keep In Touch</h2>
         <ul>
             <li class='foot'><img src="images/email.png" alt="Email" width="37.5px" height="26.8px"></li>
