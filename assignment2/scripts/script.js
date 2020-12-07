@@ -1,3 +1,4 @@
+// Toggle Between light and dark themes
 let button = document.querySelector(".dark_btn");
 function changeBG() {
 
@@ -33,6 +34,7 @@ function changeBG() {
 }
 button.addEventListener("click", changeBG)
 
+// Change theme button from dark to light, and back
 function changeBtnText() {
 
     if (button.innerText === "Dark Theme") {
@@ -44,6 +46,29 @@ function changeBtnText() {
 }
 button.addEventListener("click", changeBtnText)
 
+//Cancel the note taking area
+let cancelButton = document.querySelector(".cancel_btn");
+function cancelPage() {
+
+    let saveButton = document.getElementById("savebtn");
+    let textBoxArea = document.getElementById("textbox");
+    let cancelbtn = document.getElementById("cancelbtn");
+
+    saveButton.style.display = 'none'
+    textBoxArea.style.display = 'none'
+    cancelbtn.style.display = 'none'
+}
+cancelButton.addEventListener("click", cancelPage)
+
+//Bring back note taking area
+let newNoteButton = document.querySelector("new_note-btn");
+function returnNote() {
+
+
+}
+
+
+//attempt at making the aide list
 let notesArray = [{
 
     title: "note one",
@@ -67,14 +92,14 @@ function makeArray () {
     notesArray.push({title: title_text, body: body_text})
 }
 
-let saveButton = document.querySelector("save_btn");
-let sideList = document.querySelector("#newList");
+// let saveButton = document.querySelector("save_btn");
+// let sideList = document.querySelector("#newList");
 
-function saveText(notes) {
+// function saveText(notes) {
 
-    let ul = document.querySelector(`${notes.title}`)
-    let li = document.createElement("li")
-    li.innerHTML = `${notesArray.title} ${notesArray.body}`;
-    URL.appendChild(li);
-}
-saveButton.addEventListener("click", )
+//     let ul = document.querySelector(`${notes.title}`)
+//     let li = document.createElement("li")
+//     li.innerHTML = `${notesArray.title} ${notesArray.body}`;
+//     URL.appendChild(li);
+// }
+// saveButton.addEventListener("click", )
