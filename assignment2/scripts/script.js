@@ -71,8 +71,19 @@ function makeVisible() {
     returnsaveButton.style.visibility = 'visible'
     returntextBoxArea.style.visibility = 'visible'
     returncancelbtn.style.visibility = 'visible'
-}
+
+   
+} 
 noteButton.addEventListener("click", makeVisible)
+
+function eraseText() {
+    document.getElementById("textbox").value = " ";
+}
+noteButton.addEventListener("click", eraseText)
+
+
+
+
 
 
 //attempt at making the aide list
